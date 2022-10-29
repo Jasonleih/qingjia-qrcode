@@ -174,12 +174,19 @@
         var today = new Date();
 
         var day = today.getDate();
+      if(day<9)
+        day="0"+day;
 
         var h = today.getHours();
+ if(h<9)
+         h="0"+h;
 
         var m = today.getMinutes();
-
+ 	if(m<9)
+         m="0"+m;
         var s = today.getSeconds();
+ if(s<9)
+        s="0"+s;
 
         var nowdate = "20" + day + "21" + h + "20" + m + "06" + s + "10";
         var scewmUrl = "https://xsgl.nwpu.edu.cn/app/z.jsp?t=" + nowdate + "&s=";
